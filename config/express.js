@@ -1,6 +1,9 @@
-;var express = require('express');
+var express = require('express');
 var morgan = require('morgan');
-var compress = require('compress');
+var compress = require('compression');
+var bodyParser = require('body-parser');
+var methodOverride = require('method-override');
+var cors = require('cors');
 
 module.exports = function(){
   var app = express();
@@ -9,5 +12,22 @@ if(process.env.NODE_ENV === "development"){
 }else if (process.env.NODE_ENV === 'production'){
   app.use(compress());
 }
+app.use(cors());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
+
+app.use(bodyParser.json());
+app.use(methodOverride());
+
+app.set('views', './app/views');
+app.set('view engine', 'ejs');
+
+
+
+
+return app;
+
 
 };
