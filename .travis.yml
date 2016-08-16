@@ -1,7 +1,15 @@
 language: node_js
 node_js:
-  - "6"
-  - "6.1"
-  - "5.11"
-  - "0.6"
-  - "iojs"
+- '6'
+- '6.1'
+- '5.11'
+- '0.6'
+- iojs
+deploy:
+  provider: heroku
+  api_key:
+    secure: c1BBtPwXhari+0pBizNNz3zshLmaCLAwTJsXq8Vcz1MzbQkWM2IQ/UIDlO00/45EwDBkT1xssI+M2yyp/QvwhThsHcDUIY8MNxV/SNdVsW+riSFvQM0zcwhI1to1GYTrl5UEjcs/poWYTsTNxA/MrHO3wIelthPA1eqIZ/VoXFKi1i8hAXPApZqEUgYvd2z3hcmI6j9bMtiBVrCyLD1Cx3Mq6uvKYEsAUvQiy07irMLhlTVfnzcDkpbiNS16kyhulsA2d5xiIOquYCwQrVE61EVn8eC17jIOZNZi2Qhllxjls6zRFuwuUwv44bQaDggFcgNNvnTkHVoG0g27IZPYO/JVoxjKYkXAeL+2W8XKDkcjgReiGz2BQjYZ6GvvU+KCg7jsXdDf/7JcxiSKqdV1bKDI/3W7Dga9JFoAjOQXGVIDVC6SFUCHeEQVOZLQOii1aETrENyuw7EhTzdHJdigqjTT4ohQw8qsQdyiZQJRa6XteTLdPjAUvW8nkgFdqAvQD7HdyAVgFwTpKFbN7R5ohIKkKgtKf/jX2VgJM6g8WmaiELlPs1ytis/3VT+854oE0kU+0eVHl9UW+BeiY3v+a4SYxh50lgGAL//pJiPnfSySY5psEbxmhAzX8Ud+XrstwFAdE0WQvYK++3KwYqm63EIZo93JOE/q2HCyHXk9pNo=
+  app: stormy-fortress-58342
+  on:
+    repo: Seahyt/Backend-Individual
+    branch: dev
