@@ -7,7 +7,7 @@ describe("Express Server API", function() {
   describe("should return users json on get /kayden", function() {
       it("returns status code 200", function(done) {
         supertest(app)
-          .get('/')
+          .get('/kayden')
           .expect('Content-Type', /json/)
           .expect(200, done);
       });
