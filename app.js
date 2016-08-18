@@ -1,7 +1,7 @@
 // MY MAIN APP JS
 //CONSTANT VARIABLE, DON'T CHANGE
 var jwt_secret = 'superfreckingsupercalifragilisticex';
-var mongo_url = process.env.MONGODB_URI || 'mongodb://<dbuser>:<dbpassword>@ds161255.mlab.com:61255/backend-individual';
+var mongo_url = process.env.MONGODB_URI || 'mongodb://kai:ridicu.mlab.com:61255/backend-individual';
 var express = require('./config/express'),
     mongoose = require('./config/mongoose');
 
